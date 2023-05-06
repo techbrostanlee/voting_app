@@ -19,7 +19,7 @@ import PartRoute from './Routes/PartRoute.js'
 const app = express();
 app.use(express.static('public'));
 app.use(cors({
-    origin: 'http://localhost:3000' // or whatever the URL of your React app is
+    origin: "https://6456776995db9d34c87ee604--magical-crumble-cdab58.netlify.app/" // or whatever the URL of your React app is
   }));
 app.use(bodyParser.json({limit: '30mb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '30mb', extended: true}))

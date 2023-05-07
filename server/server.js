@@ -18,9 +18,7 @@ import PartRoute from './Routes/PartRoute.js'
 //Middlewares
 const app = express();
 app.use(express.static('public'));
-app.use(cors({
-    origin: 'https://64582be90554c83d9343ea9d--glittery-panda-4766c1.netlify.app' // or whatever the URL of your React app is
-  }));
+app.use(cors())
 app.use(bodyParser.json({limit: '30mb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '30mb', extended: true}))
 app.use(cookieParser())
